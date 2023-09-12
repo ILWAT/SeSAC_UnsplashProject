@@ -31,8 +31,8 @@ class ViewController: UIViewController {
         searchBar.placeholder = "self"
         searchBar.text = "ASDf"
         searchBar.showsCancelButton = false
-
-    
+        
+    }
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated) //ctrl + shift + 클릭
         print(#function)
@@ -45,6 +45,6 @@ class ViewController: UIViewController {
         super.viewWillAppear(animated) //ctrl + shift + 클릭
         print(#function)
     }
-
+        
 }
 

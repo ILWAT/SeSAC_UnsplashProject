@@ -9,7 +9,7 @@
 
 "nickname_placeholder" = "닉네임을 알려주세요";
 
-"nickname_result" = "당신의 닉네임은 %@, %@, %@입니다.";
+"nickname_result" = "당신의 닉네임은 %@, %@, %@입니다."; //여러개 파라미터도 가능
 
 "age_result" = "당신의 나이는 %d살 입니다.";
 
