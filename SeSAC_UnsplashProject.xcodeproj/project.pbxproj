@@ -27,6 +27,10 @@
 		DEC175802AB02DBA006C62F9 /* PhotoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC1757F2AB02DBA006C62F9 /* PhotoViewModel.swift */; };
 		DEC175822AB02F10006C62F9 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = DEC175812AB02F10006C62F9 /* .gitignore */; };
 		DEC175842AB02F39006C62F9 /* APIKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC175832AB02F39006C62F9 /* APIKeys.swift */; };
+		DEC175942AB139E3006C62F9 /* CalculateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC175932AB139E3006C62F9 /* CalculateViewController.swift */; };
+		DEC175962AB13AA8006C62F9 /* CalculateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC175952AB13AA8006C62F9 /* CalculateViewModel.swift */; };
+		DEC175982AB13DAC006C62F9 /* CalObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC175972AB13DAC006C62F9 /* CalObservable.swift */; };
+		DEC1759A2AB159A1006C62F9 /* CustomObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC175992AB159A1006C62F9 /* CustomObservable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +65,10 @@
 		DEC1757F2AB02DBA006C62F9 /* PhotoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewModel.swift; sourceTree = "<group>"; };
 		DEC175812AB02F10006C62F9 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		DEC175832AB02F39006C62F9 /* APIKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKeys.swift; sourceTree = "<group>"; };
+		DEC175932AB139E3006C62F9 /* CalculateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateViewController.swift; sourceTree = "<group>"; };
+		DEC175952AB13AA8006C62F9 /* CalculateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateViewModel.swift; sourceTree = "<group>"; };
+		DEC175972AB13DAC006C62F9 /* CalObservable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalObservable.swift; sourceTree = "<group>"; };
+		DEC175992AB159A1006C62F9 /* CustomObservable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomObservable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +101,7 @@
 		DEC1751B2AAE99A7006C62F9 /* SeSAC_UnsplashProject */ = {
 			isa = PBXGroup;
 			children = (
+				DEC175922AB139CA006C62F9 /* Calculate */,
 				DEC175762AB02B48006C62F9 /* Photo */,
 				DEC1755E2AAFED43006C62F9 /* Login */,
 				DEC1751C2AAE99A7006C62F9 /* AppDelegate.swift */,
@@ -132,6 +141,17 @@
 				DEC1757F2AB02DBA006C62F9 /* PhotoViewModel.swift */,
 			);
 			path = Photo;
+			sourceTree = "<group>";
+		};
+		DEC175922AB139CA006C62F9 /* Calculate */ = {
+			isa = PBXGroup;
+			children = (
+				DEC175932AB139E3006C62F9 /* CalculateViewController.swift */,
+				DEC175952AB13AA8006C62F9 /* CalculateViewModel.swift */,
+				DEC175972AB13DAC006C62F9 /* CalObservable.swift */,
+				DEC175992AB159A1006C62F9 /* CustomObservable.swift */,
+			);
+			path = Calculate;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,6 +231,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DEC1757C2AB02B48006C62F9 /* Photo.swift in Sources */,
+				DEC1759A2AB159A1006C62F9 /* CustomObservable.swift in Sources */,
 				DEC1754E2AAEBAEA006C62F9 /* Extension+String.swift in Sources */,
 				DEC175842AB02F39006C62F9 /* APIKeys.swift in Sources */,
 				DEC175212AAE99A7006C62F9 /* ViewController.swift in Sources */,
@@ -218,10 +239,13 @@
 				DEC175602AAFED62006C62F9 /* LoginViewController.swift in Sources */,
 				DEC1757B2AB02B48006C62F9 /* APIService.swift in Sources */,
 				DEC175642AAFF39E006C62F9 /* Observable.swift in Sources */,
+				DEC175942AB139E3006C62F9 /* CalculateViewController.swift in Sources */,
 				DEC1751F2AAE99A7006C62F9 /* SceneDelegate.swift in Sources */,
+				DEC175982AB13DAC006C62F9 /* CalObservable.swift in Sources */,
 				DEC175802AB02DBA006C62F9 /* PhotoViewModel.swift in Sources */,
 				DEC175682AB0015E006C62F9 /* SampleViewModel.swift in Sources */,
 				DEC175662AAFFE03006C62F9 /* SampleViewController.swift in Sources */,
+				DEC175962AB13AA8006C62F9 /* CalculateViewModel.swift in Sources */,
 				DEC1756A2AB00E44006C62F9 /* LoginViewModel.swift in Sources */,
 				DEC1757E2AB02BA2006C62F9 /* PhotoViewController.swift in Sources */,
 			);
