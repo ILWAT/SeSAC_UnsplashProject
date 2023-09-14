@@ -17,7 +17,7 @@ struct User {
 }
 
 class SampleViewModel {
-    var list = [User(name: "Hue", age: 23), User(name: "Jack", age: 21), User(name: "Kokojong", age: 20), User(name: "Bran", age: 20)]
+    let list = [User(name: "Hue", age: 23), User(name: "Jack", age: 21), User(name: "Kokojong", age: 20), User(name: "Bran", age: 20)]
     
     var numberofRowsInSection: Int{
         get{ return list.count}

@@ -31,6 +31,9 @@
 		DEC175962AB13AA8006C62F9 /* CalculateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC175952AB13AA8006C62F9 /* CalculateViewModel.swift */; };
 		DEC175982AB13DAC006C62F9 /* CalObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC175972AB13DAC006C62F9 /* CalObservable.swift */; };
 		DEC1759A2AB159A1006C62F9 /* CustomObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC175992AB159A1006C62F9 /* CustomObservable.swift */; };
+		DEC175D02AB29703006C62F9 /* SimpleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC175CF2AB29703006C62F9 /* SimpleTableViewController.swift */; };
+		DEC175D22AB2A0C3006C62F9 /* NewSimpleCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC175D12AB2A0C3006C62F9 /* NewSimpleCollectionView.swift */; };
+		DEC175D52AB2A9D7006C62F9 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = DEC175D42AB2A9D7006C62F9 /* SnapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +72,8 @@
 		DEC175952AB13AA8006C62F9 /* CalculateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateViewModel.swift; sourceTree = "<group>"; };
 		DEC175972AB13DAC006C62F9 /* CalObservable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalObservable.swift; sourceTree = "<group>"; };
 		DEC175992AB159A1006C62F9 /* CustomObservable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomObservable.swift; sourceTree = "<group>"; };
+		DEC175CF2AB29703006C62F9 /* SimpleTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTableViewController.swift; sourceTree = "<group>"; };
+		DEC175D12AB2A0C3006C62F9 /* NewSimpleCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewSimpleCollectionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEC175D52AB2A9D7006C62F9 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,6 +107,7 @@
 		DEC1751B2AAE99A7006C62F9 /* SeSAC_UnsplashProject */ = {
 			isa = PBXGroup;
 			children = (
+				DEC175CE2AB296DE006C62F9 /* New */,
 				DEC175922AB139CA006C62F9 /* Calculate */,
 				DEC175762AB02B48006C62F9 /* Photo */,
 				DEC1755E2AAFED43006C62F9 /* Login */,
@@ -154,6 +161,15 @@
 			path = Calculate;
 			sourceTree = "<group>";
 		};
+		DEC175CE2AB296DE006C62F9 /* New */ = {
+			isa = PBXGroup;
+			children = (
+				DEC175CF2AB29703006C62F9 /* SimpleTableViewController.swift */,
+				DEC175D12AB2A0C3006C62F9 /* NewSimpleCollectionView.swift */,
+			);
+			path = New;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -170,6 +186,9 @@
 			dependencies = (
 			);
 			name = SeSAC_UnsplashProject;
+			packageProductDependencies = (
+				DEC175D42AB2A9D7006C62F9 /* SnapKit */,
+			);
 			productName = SeSAC_UnsplashProject;
 			productReference = DEC175192AAE99A7006C62F9 /* SeSAC_UnsplashProject.app */;
 			productType = "com.apple.product-type.application";
@@ -200,6 +219,9 @@
 				ja,
 			);
 			mainGroup = DEC175102AAE99A7006C62F9;
+			packageReferences = (
+				DEC175D32AB2A9D7006C62F9 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = DEC1751A2AAE99A7006C62F9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -239,7 +261,9 @@
 				DEC175602AAFED62006C62F9 /* LoginViewController.swift in Sources */,
 				DEC1757B2AB02B48006C62F9 /* APIService.swift in Sources */,
 				DEC175642AAFF39E006C62F9 /* Observable.swift in Sources */,
+				DEC175D02AB29703006C62F9 /* SimpleTableViewController.swift in Sources */,
 				DEC175942AB139E3006C62F9 /* CalculateViewController.swift in Sources */,
+				DEC175D22AB2A0C3006C62F9 /* NewSimpleCollectionView.swift in Sources */,
 				DEC1751F2AAE99A7006C62F9 /* SceneDelegate.swift in Sources */,
 				DEC175982AB13DAC006C62F9 /* CalObservable.swift in Sources */,
 				DEC175802AB02DBA006C62F9 /* PhotoViewModel.swift in Sources */,
@@ -492,6 +516,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DEC175D32AB2A9D7006C62F9 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 5.6.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DEC175D42AB2A9D7006C62F9 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DEC175D32AB2A9D7006C62F9 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DEC175112AAE99A7006C62F9 /* Project object */;
 }

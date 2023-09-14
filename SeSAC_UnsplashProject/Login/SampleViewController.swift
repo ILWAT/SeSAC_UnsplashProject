@@ -53,9 +53,18 @@ extension SampleViewController: UITableViewDelegate, UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "sampleCell") else { return UITableViewCell()}
-        let data = viewModel.cellForRowAt(at: indexPath)
-        cell.textLabel?.text = data.introduce
+        //기존의 셀 구성 방식
+//        guard let cell = tableView.dequeueReusableCell(withIdentifier: "sampleCell") else { return UITableViewCell()}
+//        let data = viewModel.cellForRowAt(at: indexPath)
+//        cell.textLabel?.text = data.introduce
+        
+        let cell = UITableViewCell()
+        var content = cell.defaultContentConfiguration()
+        content.text = "테스트"
+        content.secondaryText = "안녕하세요 \(indexPath.row)번째 셀입니다."
+        cell.contentConfiguration = content // Protocol as Type
+        
+        
         return cell
     }
     
