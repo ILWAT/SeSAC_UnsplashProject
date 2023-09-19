@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE59D7192AB7D34A00C79348 /* NumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE59D7182AB7D34A00C79348 /* NumberViewController.swift */; };
+		DE59D71B2AB7D94200C79348 /* NumberViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE59D71A2AB7D94200C79348 /* NumberViewModel.swift */; };
+		DE59D71D2AB7E7B200C79348 /* NewSimpleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE59D71C2AB7E7B200C79348 /* NewSimpleViewModel.swift */; };
 		DEC1751D2AAE99A7006C62F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC1751C2AAE99A7006C62F9 /* AppDelegate.swift */; };
 		DEC1751F2AAE99A7006C62F9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC1751E2AAE99A7006C62F9 /* SceneDelegate.swift */; };
 		DEC175212AAE99A7006C62F9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC175202AAE99A7006C62F9 /* ViewController.swift */; };
@@ -37,6 +40,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DE59D7182AB7D34A00C79348 /* NumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberViewController.swift; sourceTree = "<group>"; };
+		DE59D71A2AB7D94200C79348 /* NumberViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberViewModel.swift; sourceTree = "<group>"; };
+		DE59D71C2AB7E7B200C79348 /* NewSimpleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewSimpleViewModel.swift; sourceTree = "<group>"; };
 		DEC175192AAE99A7006C62F9 /* SeSAC_UnsplashProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeSAC_UnsplashProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEC1751C2AAE99A7006C62F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DEC1751E2AAE99A7006C62F9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -134,6 +140,8 @@
 				DEC175632AAFF39E006C62F9 /* Observable.swift */,
 				DEC175652AAFFE03006C62F9 /* SampleViewController.swift */,
 				DEC175672AB0015E006C62F9 /* SampleViewModel.swift */,
+				DE59D7182AB7D34A00C79348 /* NumberViewController.swift */,
+				DE59D71A2AB7D94200C79348 /* NumberViewModel.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -166,6 +174,7 @@
 			children = (
 				DEC175CF2AB29703006C62F9 /* SimpleTableViewController.swift */,
 				DEC175D12AB2A0C3006C62F9 /* NewSimpleCollectionView.swift */,
+				DE59D71C2AB7E7B200C79348 /* NewSimpleViewModel.swift */,
 			);
 			path = New;
 			sourceTree = "<group>";
@@ -253,11 +262,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				DEC1757C2AB02B48006C62F9 /* Photo.swift in Sources */,
+				DE59D71B2AB7D94200C79348 /* NumberViewModel.swift in Sources */,
 				DEC1759A2AB159A1006C62F9 /* CustomObservable.swift in Sources */,
 				DEC1754E2AAEBAEA006C62F9 /* Extension+String.swift in Sources */,
 				DEC175842AB02F39006C62F9 /* APIKeys.swift in Sources */,
 				DEC175212AAE99A7006C62F9 /* ViewController.swift in Sources */,
 				DEC1751D2AAE99A7006C62F9 /* AppDelegate.swift in Sources */,
+				DE59D7192AB7D34A00C79348 /* NumberViewController.swift in Sources */,
 				DEC175602AAFED62006C62F9 /* LoginViewController.swift in Sources */,
 				DEC1757B2AB02B48006C62F9 /* APIService.swift in Sources */,
 				DEC175642AAFF39E006C62F9 /* Observable.swift in Sources */,
@@ -269,6 +280,7 @@
 				DEC175802AB02DBA006C62F9 /* PhotoViewModel.swift in Sources */,
 				DEC175682AB0015E006C62F9 /* SampleViewModel.swift in Sources */,
 				DEC175662AAFFE03006C62F9 /* SampleViewController.swift in Sources */,
+				DE59D71D2AB7E7B200C79348 /* NewSimpleViewModel.swift in Sources */,
 				DEC175962AB13AA8006C62F9 /* CalculateViewModel.swift in Sources */,
 				DEC1756A2AB00E44006C62F9 /* LoginViewModel.swift in Sources */,
 				DEC1757E2AB02BA2006C62F9 /* PhotoViewController.swift in Sources */,

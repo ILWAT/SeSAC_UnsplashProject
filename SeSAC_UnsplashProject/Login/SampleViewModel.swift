@@ -7,12 +7,28 @@
 
 import Foundation
 
-struct User {
+
+//struct를 class로 바꾸게 되면 다음과 같이 2가지 메서드를 추가로 구현해줘야함.
+class User: Hashable {
+    static func == (lhs: User, rhs: User) -> Bool {
+        return lhs.id == rhs.id
+    }
+    
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(id) //아이디를 가지고 판별
+    }
+    
     let name: String
     let age: Int
+    let id = UUID().uuidString //Unique. name age가 같더라도 문제가 생기지 않게
     
     var introduce: String {
         return "\(name), \(age)살"
+    }
+    
+    init(name: String, age: Int) {
+        self.name = name
+        self.age = age
     }
 }
 
